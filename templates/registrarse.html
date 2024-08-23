@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %} ChatApp {% endblock %}
+
+{% block main %}
+<div class="col-12">
+  <label id="texto_registrarse" for="exampleInputEmail1">Introduce tu nickname: </label>
+  <form action="/registrarse" method="POST">
+    <div class="form-group">
+      <input type="text" id="username" name="username" autocomplete="off" autofocus class="form-control"
+        id="exampleInputEmail1" aria-describedby="emailHelp" />
+    </div>
+    <button class="btn btn-primary" type="submit">Enter</button>
+  </form>
+</div>
+{% endblock %}

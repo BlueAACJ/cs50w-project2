@@ -1,0 +1,7 @@
+Flask
+psycopg2-binary
+python-dotenv
+jinja2
+requests 
+Flask-SocketIO
+flask-socketio

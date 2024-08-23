@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %} ChatApp {% endblock %}
+
+{% block main %}
+<div class="col-12">
+  <label id="texto_registrarse" for="exampleInputEmail1">Introduce el nombre del canal que deseas crear</label>
+  <form action="/create" method="post">
+
+    <div class="form-group">
+      <input type="text" name="channel" id="channel" autocomplete="off" autofocus class="form-control"
+        id="exampleInputEmail1" aria-describedby="emailHelp" />
+    </div>
+    <button class="btn btn-primary" type="submit">Crear</button>
+  </form>
+</div>
+
+<script type="text/javascript">
+  var channel = localStorage.getItem("last_channel");
+  var list = document.getElementById("channelsList").innerHTML;
+
+  if (list.includes(channel)) {
+    window.location.replace("/channels/" + channel);
+  }
+</script>
+{% endblock %}

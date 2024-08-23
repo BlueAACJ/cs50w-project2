@@ -1,0 +1,57 @@
+/*Alejandro Antonio CAstillo Jacamo */
+main {
+  text-align: center;
+}
+
+.messageBox {
+  list-style: none;
+  margin-bottom: 1px;
+  text-align: left;
+}
+
+.user {
+  font-family: "Turret Road";
+  font-size: 18px;
+  color: Black;
+}
+
+.msg {
+  margin: 0px;
+  font-family: "Turret Road";
+}
+
+.time {
+  color: grey;
+}
+
+#texto_registrarse {
+  margin-top: 10%;
+  font-size: xx-large;
+}
+
+#blockmain {
+  background-color: bisque;
+}
+
+.nav-item {
+  padding-right: 25px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+#nav {
+  background-color: rgb(60, 223, 255) !important;
+}
+
+#canal {
+  margin-top: 25px;
+  font-size: xx-large;
+  font-style: italic;
+  font-weight: bold;
+  align-items: left;
+}
+
+.form-control {
+  width: 30%;
+  display: table-cell;
+}/*# sourceMappingURL=style.css.map */
